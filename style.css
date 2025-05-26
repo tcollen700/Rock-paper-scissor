@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+h1, h2, p {
+  text-align: center;
+}
+h1 {
+  font-size: 18px;
+}
+.main {
+  padding: 10px;
+}
+.logo>img {
+  width: 70px;
+}
+.logo {
+  background-color: #efebebee;
+  display: flex;
+  justify-content: center;
+  box-shadow: 3px 0 5px #000000c4;
+}
+.container>button>img, .computer-choice>img {
+  width: 50px;
+}
+.computer-choice>img {
+  transform: rotate(180deg);
+}
+.container>button, .computer-choice {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #19121293;
+  border: none;
+}
+.container>button:hover {
+  background-color: white;
+}
+.computer-choice {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-color: white;
+}
+.computer-choice p {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid white;
+  box-shadow: 3px 0px 3px #2b212175;
+  height: 100px;
+  background-color: #19121293;
+}
+.score-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.reset-button {
+  width: 300px;
+  height: 40px;
+  font-size: 18px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+}

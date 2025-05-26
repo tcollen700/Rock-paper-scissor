@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ROCK, PAPER, SCISSOR GAME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="logo">
+       <img src="images/logo.png">
+    </div>
+    <div class="main">
+      <h1>ROCK, PAPER, SCISSOR GAME</h1>
+      
+      <p>Computer: <strong class="computer-outcome"></strong></p>
+      <div class="container">
+        <div class="computer-choice">
+          <p>computer move</p>
+        </div>
+      </div>
+      <p>You: <strong class="player-outcome"></strong></p>
+      <div class="container">
+        
+        <button class="player-move" 
+        onclick="
+        playerMove('rock');
+        gameOutCome('rock');
+        "><img src="images/rock.svg"></button>
+        
+        <button class="player-move" onclick="
+        playerMove('paper');
+        gameOutCome('paper');
+        "><img src="images/paper.svg"></button>
+        
+        <button class="player-move" onclick="
+        playerMove('scissor');
+        gameOutCome('scissor');
+        "><img src="images/scissor.svg"></button>
+        
+      </div>
+      <div class="score-container">
+        <h2>SCORE</h2>
+        <p>Wins : <strong class="score-wins"></strong></p>
+        <p>Losses : <strong class="score-losses"></strong></p>
+        <p>Ties : <strong class="score-ties"></strong></p>
+        <button class="reset-button" onclick="resetScore()">Reset Score</button>
+      </div>
+    </div>
+    
+    <script src="javascript.js"></script>
+  </body>
+</html>
